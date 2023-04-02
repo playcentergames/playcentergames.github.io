@@ -1,0 +1,121 @@
+<!-- Navbar component -->
+<app-navbar />
+<!-- Spotlight -->
+<div class="bg-parallax" [ngStyle]="{'background-image': 'url(' + gameDetails.game_spotlight_image + ')'}">
+</div>
+
+<!-- Game details -->
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 g-4 game-overview">
+        <div class="col col-sm-3">
+            <div class="card h-100">
+                <img [src]="gameDetails.game_image" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col col-sm-9 spotlight-detail">
+            <h1 class="spotlight-title">{{gameDetails.game_name}}</h1>
+            <div class=" row row-cols-1 g-4 spotlight-info">
+                <div class="col spotlight-info-item">
+                    <div class="btn btn-light rounded">
+                        <span class="spotlight-info-item-text">{{gameDetails.game_age_rating}}</span>
+                    </div>
+                </div>
+                <div class="col spotlight-info-item">
+                    <div class="btn btn-light rounded-pill">
+                        <span class="spotlight-info-item-text">{{gameDetails.game_genre}}</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="spotlight-description">{{gameDetails.game_short_description}}</p>
+                    <a href="#" class="btn btn-info">INSTALL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card text-bg-dark mb-3 w-100 game-detail">
+        <div class="card-header">Description</div>
+        <div class="card-body">
+            <p class="card-text">{{gameDetails.game_description}}</p>
+        </div>
+    </div>
+    <div class="card text-bg-dark mb-3 w-100 game-detail">
+        <div class="card-header">Additional Information</div>
+        <div class="card-body">
+            <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 spotlight-info">
+                <div class="col d-flex">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Developer</p>
+                        <p class="card-text">{{gameDetails.game_developer}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Publisher</p>
+                        <p class="card-text">{{gameDetails.game_publisher}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Release Date</p>
+                        <p class="card-text">{{gameDetails.game_release_date}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Size</p>
+                        <p class="card-text">{{gameDetails.game_size}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-language"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Language</p>
+                        <p class="card-text">{{gameDetails.game_language}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-desktop"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Platform</p>
+                        <p class="card-text">{{gameDetails.game_platform}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Price</p>
+                        <p class="card-text">{{gameDetails.game_price}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-dice"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Genre</p>
+                        <p class="card-text">{{gameDetails.game_genre}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Age Rating</p>
+                        <p class="card-text">{{gameDetails.game_age_rating}}</p>
+                    </div>
+                </div>
+                <div class="col d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <div class="info">
+                        <p class="card-text info-title">Release Date</p>
+                        <p class="card-text">{{gameDetails.game_release_date}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer component -->
+<app-footer />

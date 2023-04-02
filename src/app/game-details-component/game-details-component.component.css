@@ -1,0 +1,87 @@
+.game-overview {
+    margin-top: -200px;
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    box-shadow: inset 0 -200px 100px -25px var(--bs-body-bg);
+}
+
+.game-overview .card {
+    width: 250px !important;
+    height: 100% !important;
+    position: relative;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+
+
+.game-overview .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.spotlight-title {
+    color: var(--bs-emphasis-color);
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+.spotlight-description {
+    font-size: 0.8rem;
+}
+
+.btn {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 992px) {
+
+    .bg-parallax {
+        height: 80vh;
+    }
+}
+
+.game-detail {
+    margin-top: 5rem;
+    width: 100% !important;
+    transition: all 0.5s;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+i {
+    font-size: 0.8rem;
+    min-width: 20px;
+    color: var(--bs-emphasis-color);
+    display: flex;
+    align-items: start !important;
+    margin: 0.25rem 1.5rem;
+}
+
+.info-title {
+    color: var(--bs-emphasis-color);
+}
