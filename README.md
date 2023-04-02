@@ -18,4 +18,4 @@ We welcome feedback and suggestions on how to improve our games and make them mo
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at info@playcenter.com. Thank you for visiting our GitHub page, and we hope you enjoy playing our games as much as we enjoy developing them!
+If you have any questions or concerns, please don't hesitate to contact us. Thank you for visiting our GitHub page, and we hope you enjoy playing our games as much as we enjoy developing them!
